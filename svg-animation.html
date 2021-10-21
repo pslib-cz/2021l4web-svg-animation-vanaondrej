@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle animation</title>
+    <style>
+        main {
+            display: flex;
+            height: 100vh;
+            width: calc(100vw-2*17px);
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <svg width="300" height="300">
+            <defs>
+                <linearGradient id="MyGradient">
+                  <stop offset="5%" stop-color="#F60" />
+                  <stop offset="95%" stop-color="#FF6" />
+                </linearGradient>
+              </defs>
+            <rect x="0" y="0" width="300" height="300" fill="url(#MyGradient)" />
+            <circle cx="100" cy="100" r="20" fill="white">
+                <animate attributeName="cx" from="100" to="200" dur="1s" repeatCount="0" calcMode="spline"
+                    keySplines="0.42 0 0.58 1" keyTimes="0;1" />
+                <animate attributeName="cy" from="100" to="200" dur="1s" repeatCount="0" calcMode="spline"
+                    keySplines="0.42 0 0.58 1" keyTimes="0;1" />
+                <animate attributeName="cy" from="200" to="100" begin="1s" dur="1s" repeatCount="0" calcMode="spline"
+                    keySplines="0.42 0 0.58 1" keyTimes="0;1" />
+                <animate attributeName="cx" from="200" to="100" begin="2s" dur="1s" repeatCount="0" calcMode="spline"
+                    keySplines="0.42 0 0.58 1" keyTimes="0;1" />
+
+            </circle>
+            <circle cx="200" cy="100" r="20" fill="white">
+                <animate attributeName="cx" from="200" to="100" dur="1s" repeatCount="0" calcMode="spline"
+                    keySplines="0.42 0 0.58 1" keyTimes="0;1" />
+                <animate attributeName="cy" from="100" to="200" dur="1s" repeatCount="0" calcMode="spline"
+                    keySplines="0.42 0 0.58 1" keyTimes="0;1" />
+                <animate attributeName="cy" from="200" to="100" begin="1s" dur="1s" repeatCount="0" calcMode="spline"
+                    keySplines="0.42 0 0.58 1" keyTimes="0;1" />
+                <animate attributeName="cx" from="100" to="200" begin="2s" dur="1s" repeatCount="0" calcMode="spline"
+                    keySplines="0.42 0 0.58 1" keyTimes="0;1" />
+            </circle>
+            <circle cx="150" cy="150" r="20" fill="white">
+        </svg>
+    </main>
+</body>
+
+</html>
