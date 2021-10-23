@@ -1,0 +1,22 @@
+<svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" >
+            <defs>
+                <linearGradient id="circle-gradient-one">
+                    <stop offset="5%" stop-color="#cc2b5e" />
+                    <stop offset="95%" stop-color="#753a88" />
+                </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="300" height="300" rx="40" fill="url(#circle-gradient-one)" />
+            <circle cx="100" cy="100" r="20" stroke="white" stroke-width="3" fill="none">
+                    <animate attributeName="cx" values="100;200;200;100" keyTimes="0; 0.3; 0.6; 1" dur="1.5s" repeatCount="indefinite"/>
+                    <animate attributeName="cy" values="100;100;200;100"  keyTimes="0; 0.3; 0.6; 1" dur="1.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="200" cy="100" r="20" stroke="white" stroke-width="3" fill="none">
+                    <animate attributeName="cx" values="200;100;100;200" keyTimes="0; 0.3; 0.6; 1" dur="1.5s" repeatCount="indefinite"/>
+                    <animate attributeName="cy" values="200;200;100;200"  keyTimes="0; 0.3; 0.6; 1" dur="1.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="150" cy="150" r="20" fill="white" />
+            <text x="150" y="280" font-size="20px" text-anchor="middle" font-family="Gilroy, sans-serif" fill="white">loading
+              <animate attributeName="opacity" values="1;0;1" keyTimes="0; 0.5; 1" begin="0s" dur="2.5s" repeatCount="indefinite"/>
+
+            </text>
+        </svg>
